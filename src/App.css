@@ -2,7 +2,7 @@
     color:  #5d596c;
 }
 :where(.css-1uweeqc).ant-menu-dark .ant-menu-item-selected, :where(.css-1uweeqc).ant-menu-dark>.ant-menu .ant-menu-item-selected {
-    background: none !important:
+    background-color: none !important:
 }
 .footer {
     position: absolute;
