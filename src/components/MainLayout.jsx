@@ -183,7 +183,7 @@ const MainLayout = () => {
                                     </div>
                                     <div className="notify_item">
                                         <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
+                                            <img src={"/static/14.png"} alt="profile_pic" style={{width: "50px"}} />
                                         </div>
                                         <div className="notify_info">
                                             <p>Alex commented on<span>Timeline Share</span></p>
@@ -192,7 +192,7 @@ const MainLayout = () => {
                                     </div>
                                     <div className="notify_item">
                                         <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
+                                            <img src={"/static/14.png"} alt="profile_pic" style={{width: "50px"}} />
                                         </div>
                                         <div className="notify_info">
                                             <p>Alex commented on<span>Timeline Share</span></p>
@@ -201,7 +201,7 @@ const MainLayout = () => {
                                     </div>
                                     <div className="notify_item">
                                         <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
+                                            <img src={"/static/14.png"} alt="profile_pic" style={{width: "50px"}} />
                                         </div>
                                         <div className="notify_info">
                                             <p>Alex commented on<span>Timeline Share</span></p>
@@ -210,7 +210,7 @@ const MainLayout = () => {
                                     </div>
                                     <div className="notify_item">
                                         <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
+                                            <img src={"/static/14.png"} alt="profile_pic" style={{width: "50px"}} />
                                         </div>
                                         <div className="notify_info">
                                             <p>Alex commented on<span>Timeline Share</span></p>
