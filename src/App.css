@@ -1,7 +1,7 @@
 .content-wrapper h4 {
     color:  #5d596c;
 }
-.ant-menu :where(.css-1uweeqc).ant-menu-dark .ant-menu-item-selected, :where(.css-1uweeqc).ant-menu-dark>.ant-menu .ant-menu-item-selected {
+:where(.css-1uweeqc).ant-menu-dark .ant-menu-item-selected, :where(.css-1uweeqc).ant-menu-dark>.ant-menu .ant-menu-item-selected {
     background-color: red !important:
 }
 .footer {
