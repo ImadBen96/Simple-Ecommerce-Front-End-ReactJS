@@ -228,7 +228,7 @@ const MainLayout = () => {
                         <li style={{lineHeight: "normal"}} className="nav-item dropdown pe-3">
                             <a className="nav-link nav-profile d-flex align-items-center pe-10"
                                href="#" data-bs-toggle="dropdown">
-                                <img src="../../src/assets/images/14.png" alt="profile" className="rounded-circle" />
+                                <img src={"/static/14.png"} alt="profile" className="rounded-circle" />
                                 <span className="d-none d-md-block dropdown-toggle ps-2">{user.name}<br /> <span style={{color: "#994bc2"}}>ADMIN</span></span>
 
                             </a>
