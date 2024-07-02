@@ -19,8 +19,10 @@ const Item = (props) => {
                     </div>
             </div>
             <div  style={{background: "#994bc2"}} className="item_cart">
-                <div onClick={ () => { addToCart(props.id) } }>Add To Cart</div>
-                <img src={arrow_icon} />
+                 <Link to={`/product/${props.id}`}>
+                    <div onClick={ () => { addToCart(props.id) } }>Add To Cart</div>
+                    <img src={arrow_icon} />
+                 </Link>
             </div>
         </div>
     );
