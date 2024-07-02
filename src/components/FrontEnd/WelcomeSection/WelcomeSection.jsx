@@ -7,7 +7,7 @@ function WelcomeSection() {
             <div className="container">
                 <div className="bar-hero">
                     <div className="hero__photo">
-                        <img src="http://source.unsplash.com/QLEu_4Xj-fk/365x430" alt="Person with laptop" />
+                        <img src="https://cdn.pixabay.com/photo/2020/08/03/10/00/credit-card-5459711_960_720.png" alt="Person with laptop" />
                     </div>
                     <div className="hero__body half">
                         <h4 className="hero__subtitle">The all-in-one SEO tool for Business.</h4>
