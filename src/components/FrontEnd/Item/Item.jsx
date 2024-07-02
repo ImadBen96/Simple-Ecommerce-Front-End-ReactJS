@@ -20,7 +20,7 @@ const Item = (props) => {
             </div>
             <div  style={{background: "#994bc2"}} className="item_cart">
                  <Link to={`/product/${props.id}`}>
-                    <div style="color: white">Add To Cart</div>
+                    <div :style={"color":"white"}>Add To Cart</div>
                     <img src={arrow_icon} />
                  </Link>
             </div>
