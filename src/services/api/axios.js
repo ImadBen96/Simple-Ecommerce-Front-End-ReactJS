@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosClient = axios.create({
-    baseURL:  "http://localhost:8000",
+    baseURL:  "simpleecommercestripe.imadgannoun.com",
     timeout:60000,
     withCredentials: true,
     xsrfCookieName: "XSRF-TOKEN",
