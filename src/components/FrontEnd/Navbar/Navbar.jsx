@@ -7,6 +7,7 @@ import {ShopContext} from "../../../Context/Front/ShopContext.jsx";
 import categories from "../../../services/api/Categories.jsx";
 import {axiosClient} from "../../../services/api/axios.js";
 import {message} from "antd";
+import Logo from "../assets/logo/logo-commerce.png"
 const Navbar = () => {
     const [menu , setMenu] = useState("shop");
     const menuRef = useRef();
@@ -64,7 +65,8 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="nav-logo">
-                <p className="nav-logo-text">Ecommerce</p>
+                <img src={Logo} alt={"logo"} />
+                {/*<p className="nav-logo-text">Ecommerce</p>*/}
             </div>
             <div className="nav-dropdown" onClick={dropdown_toggle}>
                 <FaRegArrowAltCircleRight  />

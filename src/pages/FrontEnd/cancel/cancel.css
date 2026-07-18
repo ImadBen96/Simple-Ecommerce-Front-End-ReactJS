@@ -1,0 +1,50 @@
+/* ── Page layout ── */
+.page-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ── Illustration ── */
+.illustration {
+    width: 380px;
+    max-width: 100%;
+}
+
+.illustration img {width: 100%}
+
+/* ── Text ── */
+.page-404 h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #6f6add;
+    margin-bottom: 14px;
+}
+
+.page-404 p {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.75;
+    max-width: 360px;
+    margin-bottom: 32px;
+}
+
+/* ── Button ── */
+.btn-home {
+    display: inline-block;
+    background: #6f6add;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-home:hover { background: #1f6e61; }

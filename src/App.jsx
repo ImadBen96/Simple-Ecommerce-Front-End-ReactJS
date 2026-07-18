@@ -24,7 +24,7 @@ import Product from "./pages/product/product.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import LoginIn from "./pages/FrontEnd/LoginIn.jsx";
 import CustomerDashboard from "./pages/FrontEnd/CustomerDashboard.jsx";
-import Checkout from "./pages/FrontEnd/Checkout.jsx";
+import Checkout from "./pages/FrontEnd/checkout/Checkout.jsx";
 import Success from "./pages/FrontEnd/success/success.jsx";
 import Cancel from "./pages/FrontEnd/cancel/cancel.jsx";
 
@@ -59,7 +59,7 @@ function App() {
                   <Route path="SignIn" element={<LoginIn />} />
                   <Route path="AboutUs" element={<About />} />
                   <Route path="ContactUs" element={<ContactUs />} />
-                  <Route path="CustomerDashboard" element={<CustomerDashboard />} />
+                  {/*<Route path="CustomerDashboard" element={<CustomerDashboard />} />*/}
                   <Route path="checkout" element={<Checkout />} />
 
           </Route>

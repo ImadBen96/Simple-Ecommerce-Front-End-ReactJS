@@ -1,5 +1,4 @@
 import "./Popular.css";
-import data_product from "../assets/data.js";
 import Item from "../Item/Item.jsx";
 import {useEffect, useState} from "react";
 import {axiosClient} from "../../../services/api/axios.js";
@@ -33,9 +32,12 @@ const Popular = () => {
     }, []);
     return (
       <div className="popular">
-          <h1>POPULAR PRODUCTS</h1>
-          <p className="description">See All Our Popular Products From Here</p>
-          <hr style={{ background: "#994bc2",opacity:"1"}} />
+          <div className="popular-products-top">
+              <h1>POPULAR PRODUCTS</h1>
+              <p className="description">See All Our Popular Products From Here</p>
+          </div>
+
+          {/*<hr style={{ background: "#994bc2",opacity:"1"}} />*/}
           <div className="popular-item">
               {products.map((item,i)=> {
                  return  <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />

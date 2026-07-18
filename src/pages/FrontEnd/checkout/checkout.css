@@ -1,0 +1,32 @@
+.header-checkout-page {
+    padding: 5rem;
+    background-image: url("../../../assets/images/hero-login.png");
+    background-size: cover;
+}
+
+.header-checkout-page h1 {
+    color: white;
+}
+.header-checkout-page p {
+    color: beige;
+}
+
+
+.checkout .place_order{
+    background: #994bc2;
+    padding: 9px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    border-radius: 2rem 0
+}
+@media (max-width: 500px) {
+    .header-checkout-page {
+        padding: 3rem !important;
+    }
+}
+@media (max-width: 800px) {
+    .header-checkout-page {
+        padding: 3rem !important;
+    }
+}

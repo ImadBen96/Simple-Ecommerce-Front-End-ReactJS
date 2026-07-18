@@ -4,9 +4,11 @@
     gap: 8px;
     color: #5e5e5e;
     font-size: 15px;
-    font-weight: 400;
-    margin: 50px 120px;
+    font-weight: 300;
+    margin: 20px 64px;
     text-transform: capitalize;
+    background: aliceblue;
+    padding: 1rem;
 }
 @media (max-width: 1280px) {
     .breadcrum{
@@ -16,18 +18,21 @@
 }
 @media (max-width: 1024px) {
     .breadcrum{
-        font-size: 13px;
+        font-size: 14px;
         margin: 30px 30px;
+        font-weight: 500;
     }
 }
 @media (max-width: 800px) {
     .breadcrum{
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 @media (max-width: 500px) {
     .breadcrum{
         margin: 10px 7px;
-        font-size: 10px;
+        font-weight: 500;
+        font-size: 14px;
     }
 }

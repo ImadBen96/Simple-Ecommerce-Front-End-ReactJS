@@ -1,6 +1,5 @@
 import {createContext, useContext, useState} from "react";
 import LoginApi from "../../services/api/LoginApi.jsx";
-import {useNavigate} from "react-router-dom";
 
 export  const UserContext = createContext({
     user: {},
@@ -11,6 +10,7 @@ export  const UserContext = createContext({
     setAuthenticated: () => {},
     setToken: () => {}
 })
+// eslint-disable-next-line react/prop-types
 export default function AuthContext({children}) {
     const [user,setUser] = useState({});
     const [authenticated , _setAuthenticated] = useState('true' === window.localStorage.getItem('AUTHENTICATED'));

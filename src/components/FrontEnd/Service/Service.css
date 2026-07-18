@@ -15,9 +15,18 @@ section ul {
 .site-heading p {
     display: block;
     color: #171717;
-    font-size: 68px;
-    font-weight: 300;
-    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+@media (max-width: 750px)  {
+    .site-heading p {
+        display: block;
+        color: #171717;
+        font-size: 45px;
+        font-weight: 100;
+        margin-bottom: 0;
+    }
 }
 
 .site-heading p span {
@@ -26,10 +35,11 @@ section ul {
 
 .site-heading h4 {
     display: inline-block;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     position: relative;
     text-transform: capitalize;
     z-index: 1;
+    font-size: 17px;
 }
 
 /*.site-heading h4::before {*/
@@ -47,6 +57,8 @@ section ul {
     margin-bottom: 60px;
     overflow: hidden;
     margin-top: -5px;
+    background: #efd5ff;
+    border-radius: 2rem 0 3rem 6rem;
 }
 
 .carousel-shadow .owl-stage-outer {
@@ -82,8 +94,8 @@ section ul {
 .we-offer-area.text-center .service__item {
     background: #ffffff none repeat scroll 0 0;
     /*border: medium none;*/
-    padding: 67px 40px 64px;
-    border-radius: 0% 100% 3% 97% / 79% 17% 83% 21%;
+    padding: 40px 40px 48px;
+    border-radius: 2rem 0 3rem 6rem;
 }
 
 .we-offer-area.text-center .service__item svg {

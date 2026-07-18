@@ -39,4 +39,12 @@
     .descriptionbox-description {
         font-size: 14px;
     }
+    .descriptionbox-nav-box {
+        width: 171px !important;
+        height: 70px !important;
+    }
+}
+.descriptionbox-description {
+    padding: 24px !important;
+    text-align: justify;
 }

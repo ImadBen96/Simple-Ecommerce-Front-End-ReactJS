@@ -1,23 +1,21 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import cancel_order from "../../../assets/images/cancel_order.svg"
+import "./cancel.css"
 function Cancel() {
     return (
-        <div className="success">
-            <div className="card">
-                <div style={{
-                    borderRadius: "200px",
-                    height: "200px",
-                    width: "200px",
-                    background: "#F8FAF5",
-                    margin: "0 auto"
-                }}>
-                    <i style={{color :"red"}} className="checkmark">X</i>
+        <div className="cancel_order_page">
+            <div className="page-404">
+
+                <div className="illustration">
+                   <img src={cancel_order} alt="cancel Order" />
                 </div>
-                <h1>Order Canceled</h1>
-                <p>We received your purchase request;<br/> well be in touch shortly!</p>
-                <Link to={"/"} className="btn btn-primary mt-3">Home</Link>
+
+                <h1>Cancel Order Page!</h1>
+                <Link className="btn-home" to={"/"} >Back To Home</Link>
+
             </div>
+
         </div>
     );
 }

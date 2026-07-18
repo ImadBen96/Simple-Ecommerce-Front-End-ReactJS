@@ -26,8 +26,8 @@
 .prodctdisplay-right h1 {
     color: #3d3d3d;
     font-size: 35px;
-    font-weight: 700;
-    font-family: 'Roboto';
+    font-weight: 200;
+    /*font-family: 'Roboto';*/
 }
 .prodctdisplay-right-stars {
     display: flex;
@@ -57,7 +57,7 @@
     /*margin-top: 50px;*/
     color: #656565;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 300;
 }
 .prodctdisplay-right-sizes {
     display: flex;
@@ -82,7 +82,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 0% 100% 3% 97% / 79% 17% 83% 21%;
+    border-radius: 2rem 0
 }
 .prodctdisplay-right-category {
     margin-top: 10px;
@@ -90,7 +90,9 @@
 .prodctdisplay-right-category span {
     font-weight: 600;
 }
-
+.prodctdisplay-right-sizes select {
+    width: 22%;
+}
 @media (max-width: 1280px) {
     .prodctdisplay {
         margin: 0px 38px;
@@ -163,7 +165,8 @@
         width: 15px;
     }
     .prodctdisplay-right-description {
-        font-size: 12px;
+        font-size: 14px;
+        text-align: justify;
     }
     .prodctdisplay-right-sizes{
         margin: 10px 0px;
@@ -208,7 +211,8 @@
         width: 13px;
     }
     .prodctdisplay-right-description {
-        font-size: 11px;
+        font-size: 14px;
+        text-align: justify;
     }
     .prodctdisplay-right-size h1{
         margin-top: 10px;
@@ -226,6 +230,9 @@
     }
     .prodctdisplay-right-category{
         font-size: 10px;
+    }
+    .prodctdisplay-right-sizes select {
+        width: 100%;
     }
 }
 @media (max-width: 500px) {

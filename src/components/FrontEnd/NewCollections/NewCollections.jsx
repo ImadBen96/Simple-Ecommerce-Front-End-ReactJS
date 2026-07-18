@@ -33,9 +33,10 @@ const NewCollections = () => {
     }, []);
     return (
         <div className="new-collections">
-            <h1>NEW COLLECTIONS</h1>
-            <p className="description">See All Our Collections Products From Here</p>
-            <hr style={{ background: "#994bc2",opacity:"1"}} />
+           <div className="COLLECTIONS-top">
+               <h1>NEW COLLECTIONS</h1>
+               <p className="description">See All Our Collections Products From Here</p>
+           </div>
             <div className="collections">
                 {products.map((item,i)=> {
                     return  <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />

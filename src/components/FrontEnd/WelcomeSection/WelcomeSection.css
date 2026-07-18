@@ -8,6 +8,9 @@
     border: 0;
 }
 
+/*.bar-hero{*/
+/*    background-image: url("../assets/backV01.svg");*/
+/*}*/
 .hero-container btn {
     border-radius: 3px;
     cursor: pointer;
@@ -29,14 +32,49 @@
     .hero-container  .half {
         flex: 0 1 calc(50% - 1.75rem);
     }
+    .hero-container .bar-hero .btn:nth-child(1) {
+        margin: 0.75rem auto !important;
+        border-radius: 2rem 0;
+    }
+    .hero-container .bar-hero .btn:nth-child(2) {
+        margin: 0 auto !important;
+        border-radius: 2rem 0;
+    }
+    .shipping-img img {
+        width: 24% !important;
+    }
+    .shipping-img {
+        margin: 1rem auto;
+        width: 95%;
+    }
+}
+@media(max-width: 800px) {
+    .hero-container .bar-hero .btn:nth-child(1) {
+        /*margin: 0.75rem auto !important;*/
+        border-radius: 2rem 0;
+    }
+    .hero-container .bar-hero .btn:nth-child(2) {
+        margin: 0 auto !important;
+        border-radius: 2rem 0;
+    }
+    .shipping-img {
+        margin: 1rem auto;
+        width: 95%;
+    }
+    .shipping-img img {
+        width: 24% !important;
+    }
 }
 
 .hero-container {
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    /*background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);*/
+    /*background-image: url("../assets/backV03.svg");*/
     padding: 3rem 0;
     margin-bottom: 5rem !important;
 }
-
+.hero-container .left-img img{
+    width: 100%;
+}
 .hero-container .bar-hero .hero__photo img {
     width: 100%;
 }
@@ -89,13 +127,14 @@
 .hero-container .hero__subtitle {
     font-weight: 500;
     line-height: 20px;
+    text-decoration: underline;
 }
 .hero-container .hero__title {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 30px;
     padding-top: 1rem;
-    font-family: cursive;
+    color: #994bc2;
 }
 @media (min-width: 768px) {
     .hero-container .hero__title {
@@ -109,7 +148,7 @@
     flex-direction: column;
     padding-top: 1rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .hero-container .hero__footer {
         flex-direction: row;
         padding-top: 2rem;
@@ -121,8 +160,26 @@
     height: 45px;
     border-radius: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .hero-container .bar-hero .btn {
         margin-right: 1rem;
     }
 }
+/**
+shipping
+ */
+.shipping {
+    margin-top: 2.9rem;
+}
+.shipping .shipping-img {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    padding: 15px 30px 15px 25px;
+    border-radius: 2rem 0 3rem 6rem;
+}
+.shipping .shipping-img img {
+    width: 30%;
+    margin-inline-end: 10px;
+}
+.shipping .shipping-img p{margin: 0;    color: grey;}

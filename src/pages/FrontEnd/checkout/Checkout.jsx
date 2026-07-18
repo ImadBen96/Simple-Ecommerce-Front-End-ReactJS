@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import {axiosClient} from "../../services/api/axios.js";
+import {axiosClient} from "../../../services/api/axios.js";
 import {message} from "antd";
 import {useNavigate} from "react-router-dom";
-import item from "../../components/FrontEnd/Item/Item.jsx";
-
+import "./checkout.css"
 
 function Checkout() {
     const [cart,setCart] = useState([]);
     const navigate = useNavigate();
-    var totalCartPrice = 0;
+    let totalCartPrice = 0;
     const [checkoutInput,setCheckoutInput] = useState({
         first_name: "",
         last_name: "",
@@ -19,6 +18,7 @@ function Checkout() {
         state: "",
         zipcode: "",
     })
+    const [isLoading, setIsLoading] = useState(false);
 
     if (!localStorage.getItem("token")) {
         navigate("/");
@@ -58,8 +58,17 @@ function Checkout() {
            message.error("Cart Is Empty")
             return ;
         }
+        const isValid = Object.values(data).every(
+            value => value !== '' && value !== null && value !== undefined
+        );
 
+        if (!isValid) {
+            message.error("Please fill all fields.");
+            return;
+        }
+        // message.error("Please Login To View Cart");
         try {
+            setIsLoading(true);
             axiosClient.post("api/payment",data).then(res => {
                window.location.replace(res.data.url);
             }).catch(errors => {
@@ -70,13 +79,14 @@ function Checkout() {
             console.log(error);
         }
 
-
-
-        // console.log(data);
     }
 
     return (
         <>
+            <div className="header-checkout-page">
+                <h1>Checkout Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+            </div>
             <div className="container">
                 <div style={{    margin: "100px 0"}} className="checkout row">
                     <div className="col-md-7">
@@ -141,7 +151,7 @@ function Checkout() {
                                     <div className="col-md-6">
                                         <div className="form-group mb-3">
                                             <button onClick={submitOrder} type="button" className="form-control place_order">
-                                                Place Order
+                                                {isLoading ? "Loading..." : "Place Order"}
                                             </button>
                                         </div>
                                     </div>

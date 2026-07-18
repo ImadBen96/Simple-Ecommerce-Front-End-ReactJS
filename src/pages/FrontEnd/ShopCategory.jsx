@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./css/ShopCategory.css";
 import dropdown_icon from "../../components/FrontEnd/assets/dropdown_icon.png"
 import Item from "../../components/FrontEnd/Item/Item.jsx";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {axiosClient} from "../../services/api/axios.js";
 import men_banner from "../../components/FrontEnd/assets/banner_mens.png";
 import profile_banner from "../../components/FrontEnd/assets/profile_banner.png";
@@ -49,7 +49,14 @@ function ShopCategory(props) {
     }
     return (
         <div className="shop-category">
-            <img className="shopcategory-banner" src={  profile_banner  } />
+            <div className="top-category">
+                <h1>All Products  : </h1>
+                <p>Shop through our latest selection of Fashion</p>
+                <div className="links">
+                    <Link to="/">Shop</Link><span> &gt; All Products</span>
+                </div>
+                {/*<img className="shopcategory-banner" src={  profile_banner  } />*/}
+            </div>
             <div className="shopcategrory-indexSort">
                 <p>
                     <span>Showing 1-12</span> Out Of 36 Products

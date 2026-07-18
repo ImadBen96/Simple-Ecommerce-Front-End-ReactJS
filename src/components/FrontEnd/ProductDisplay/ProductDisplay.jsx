@@ -83,7 +83,7 @@ function ProductDisplay(props) {
                     <div className="prodctdisplay-right-sizes">
 
                         <select defaultValue={''}
-                                onChange={(e) => setQty(e.target.value)} style={{width: "20%"}}
+                                onChange={(e) => setQty(e.target.value)}
                                 className="form-control">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -100,7 +100,7 @@ function ProductDisplay(props) {
                     <h1>Select Size</h1>
                     <div className="prodctdisplay-right-sizes">
 
-                        <select defaultValue={''} onChange={(e) => setSingleSize(e.target.value)} style={{width: "20%"}}
+                        <select defaultValue={''} onChange={(e) => setSingleSize(e.target.value)}
                                 className="form-control">
                             <option value="" disabled>Select Size</option>
                             {product.sizes &&

@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Service.css";
-import {AiOutlinePushpin} from "react-icons/ai";
 import {FiSettings} from "react-icons/fi";
 function Service() {
     return (
@@ -8,7 +7,7 @@ function Service() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="site-heading text-center">
+                        <div className="site-heading text-center service-top-header">
                             <p>Our <span style={{color: "#994bc2"}}>Services</span></p>
                             <h4>Lorem Ipsum is simply dummy text</h4>
                         </div>

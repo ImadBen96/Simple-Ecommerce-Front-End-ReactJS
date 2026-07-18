@@ -69,77 +69,84 @@ function CartItems() {
     }
 
     return (
-        <div className="cartitems">
-            <div className="cartitems-format-main">
-                <p>Products</p>
-                <p>Title</p>
-                <p>Price</p>
-                <p>Quantity</p>
-                <p>Total</p>
-                <p>Remove</p>
+
+        <div className="cart-page">
+            <div className="cart-top">
+                <h1>Cart Page</h1>
+                <p>It pains me physically to see woman victimized, rendered pathetic by fashion.</p>
             </div>
-            <hr />
-            { cart.map((item,key) => {
-                totalCartPrice += item.product.current_price * Number(item.product_qty);
-                return (
-                    <div className="Single-item" key={key}>
-                        <div className="cartitems-format cartitems-format-main">
-                            <img width={"100%"} src={item.product.main_image} className="" alt={item.product.name} />
-                            <p className="cartitemtitle">{item.product.product_name}</p>
-                            <p>${item.product.current_price}</p>
 
-                            <div className="cartitems-quantity">
-                                <button type="button" onClick={ () => handleDecrement(item.id) } className="input-group-text">-</button>
-                                <div className="form-control text-center">{item.product_qty}</div>
-                                <button type="button" onClick={ () => handleIncrement(item.id) } className="input-group-text">+</button>
-                            </div>
+            <div className="cartitems">
 
-                            <p>${item.product.current_price * item.product_qty}</p>
-                            <img className="cartitems-remove-icon" src={remove_icon} onClick={(e) => {
-                                deleteCartItem(e,item.id)
-                            }} alt=""/>
-                        </div>
-                        <hr/>
-                    </div>
-                )
-            })
-
-            }
-
-
-            <div className="cartitems-down">
-                <div className="cartitems-total">
-                    <h1>Cart Totals</h1>
-                    <div>
-                        <div className="cartitems-total-item">
-                            <p>SubTotal</p>
-                            <p>${totalCartPrice}</p>
-                        </div>
-                        <hr/>
-                        <div className="cartitems-total-item">
-                            <p>Shipping Fee</p>
-                            <p>Free</p>
-                        </div>
-                        <hr/>
-                        <div className="cartitems-total-item">
-                            <h3>Total</h3>
-                            <h3>${totalCartPrice}</h3>
-                        </div>
-                    </div>
-                    <Link style={{
-                        fontSize: "17px",
-                        color: "#994bc2",
-                    }} to="/checkout">PROCEED TO CHECKOUT</Link>
+                <div className="cartitems-format-main">
+                    <p>Products</p>
+                    <p>Title</p>
+                    <p>Price</p>
+                    <p>Quantity</p>
+                    <p>Total</p>
+                    <p>Remove</p>
                 </div>
-                <div className="cartitems-promocode">
-                    <p>If You Have A Promo Code, Enter It Here</p>
-                    <div className="cartitems-promobox">
-                        <input type="text" placeholder="Promo Code" />
-                        <button>Submit</button>
+                <hr />
+                { cart.map((item,key) => {
+                    totalCartPrice += item.product.current_price * Number(item.product_qty);
+                    return (
+                        <div className="Single-item" key={key}>
+                            <div className="cartitems-format cartitems-format-main">
+                                <img width={"100%"} src={item.product.main_image} className="" alt={item.product.name} />
+                                <p className="cartitemtitle">{item.product.product_name}</p>
+                                <p>${item.product.current_price}</p>
+
+                                <div className="cartitems-quantity">
+                                    <button type="button" onClick={ () => handleDecrement(item.id) } className="input-group-text">-</button>
+                                    <div className="form-control text-center">{item.product_qty}</div>
+                                    <button type="button" onClick={ () => handleIncrement(item.id) } className="input-group-text">+</button>
+                                </div>
+
+                                <p className="price-single">${item.product.current_price * item.product_qty}</p>
+                                <img className="cartitems-remove-icon" src={remove_icon} onClick={(e) => {
+                                    deleteCartItem(e,item.id)
+                                }} alt=""/>
+                            </div>
+                            <hr/>
+                        </div>
+                    )
+                })
+
+                }
+
+
+                <div className="cartitems-down">
+                    <div className="cartitems-total">
+                        <h1>Cart Totals</h1>
+                        <div>
+                            <div className="cartitems-total-item">
+                                <p>SubTotal</p>
+                                <p>${totalCartPrice}</p>
+                            </div>
+                            <hr/>
+                            <div className="cartitems-total-item">
+                                <p>Shipping Fee</p>
+                                <p>Free</p>
+                            </div>
+                            <hr/>
+                            <div className="cartitems-total-item">
+                                <h3>Total</h3>
+                                <h3>${totalCartPrice}</h3>
+                            </div>
+                        </div>
+                        <Link className="button-itemsCart"  to="/checkout">PROCEED TO CHECKOUT</Link>
+                    </div>
+                    <div className="cartitems-promocode">
+                        <p>If You Have A Promo Code, Enter It Here</p>
+                        <div className="cartitems-promobox">
+                            <input type="text" placeholder="Promo Code" />
+                            <button>Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     );
 }
 

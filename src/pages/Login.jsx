@@ -51,14 +51,9 @@ const Login = () => {
 				<div className="login-wrap p-4 p-md-5">
 			      	<div className="d-flex">
 			      		<div className="w-100">
-			      			<h3 className="mb-4">LOGIN</h3>
+			      			<h3 className="mb-4">LOGIN-PAGE</h3>
 			      		</div>
-							<div className="w-100">
-									<p className="social-media d-flex justify-content-end">
-										<a href="#" className="social-icon d-flex align-items-center justify-content-center"><span className="fa fa-facebook"></span></a>
-										<a href="#" className="social-icon d-flex align-items-center justify-content-center"><span className="fa fa-twitter"></span></a>
-									</p>
-							</div>
+
 			      	</div>
 					{errors.message &&
 						<div style={{

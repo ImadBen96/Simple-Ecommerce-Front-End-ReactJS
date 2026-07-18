@@ -34,9 +34,10 @@ function RelatedProducts() {
     }, []);
     return (
         <div className="relaredproducts">
-            <h1>Related Products</h1>
-            <p className="description">See All Our Related Products From Here</p>
-            <hr />
+            <div className="top-relaredproducts">
+                <h1>Related Products</h1>
+                <p className="description">See All Our Related Products From Here</p>
+            </div>
             <div className="relaredproducts-item">
                 {products.map((item,i)=> {
                     return  <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />

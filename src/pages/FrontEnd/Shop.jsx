@@ -15,7 +15,7 @@ function Shop() {
             <Popular />
             <WelcomeSection />
             <NewCollections />
-            <NewsLetter />
+            {/*<NewsLetter />*/}
         </div>
     );
 }

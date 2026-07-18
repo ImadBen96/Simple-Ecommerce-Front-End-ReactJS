@@ -181,42 +181,7 @@ const MainLayout = () => {
                                         <div className="notify_left">Notifications</div>
                                         <div className="notify_right"><TbMessageMinus /></div>
                                     </div>
-                                    <div className="notify_item">
-                                        <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
-                                        </div>
-                                        <div className="notify_info">
-                                            <p>Alex commented on<span>Timeline Share</span></p>
-                                            <span className="notify_time">10 minutes ago</span>
-                                        </div>
-                                    </div>
-                                    <div className="notify_item">
-                                        <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
-                                        </div>
-                                        <div className="notify_info">
-                                            <p>Alex commented on<span>Timeline Share</span></p>
-                                            <span className="notify_time">10 minutes ago</span>
-                                        </div>
-                                    </div>
-                                    <div className="notify_item">
-                                        <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
-                                        </div>
-                                        <div className="notify_info">
-                                            <p>Alex commented on<span>Timeline Share</span></p>
-                                            <span className="notify_time">10 minutes ago</span>
-                                        </div>
-                                    </div>
-                                    <div className="notify_item">
-                                        <div className="notify_img">
-                                            <img src="../../src/assets/images/14.png" alt="profile_pic" style={{width: "50px"}} />
-                                        </div>
-                                        <div className="notify_info">
-                                            <p>Alex commented on<span>Timeline Share</span></p>
-                                            <span className="notify_time">10 minutes ago</span>
-                                        </div>
-                                    </div>
+
                                     <div className="notify_item dropdown-last">
                                         <div className="notify_left">View All Notifications</div>
                                     </div>
