@@ -4,3 +4,7 @@
 .ant-popconfirm-buttons button{
     height: 40px !important;
 }
+.ant-table-content {
+    overflow-x: auto;
+    width: 100%;
+}
