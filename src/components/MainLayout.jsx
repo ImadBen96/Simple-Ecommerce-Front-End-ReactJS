@@ -201,7 +201,7 @@ const MainLayout = () => {
                                 <li className="dropdown-header">
                                    <div className="profile-header">
                                        <div className="profile-header-left">
-                                           <img src="../../src/assets/images/14.png" alt="profile"  />
+                                           <img src="https://simpleecommercestripe.imadgannoun.com/uploads/14.png" alt="profile"  />
                                        </div>
                                        <div className="profile-header-right">
                                            <h6>{user.name}</h6>
